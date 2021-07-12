@@ -48,10 +48,8 @@ void loop() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-
-   if (client.isConnected()) {
+  if (client.isConnected()) {
     client.loop();
-    client.subscribe("madlibs"); 
-    Serial.print("madlibs");
-   } 
+    client.subscribe("madlibs");
+  } 
 }

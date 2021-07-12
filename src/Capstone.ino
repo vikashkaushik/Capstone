@@ -35,7 +35,7 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  display.println("test");
+  
   display.display();
   Serial.begin(9600);
 }
@@ -52,4 +52,10 @@ void loop() {
     client.loop();
     client.subscribe("madlibs");
   } 
+  else {
+    client.connect(System.deviceID());
+    client.subscribe("madlibs");
+    
+  }
+  
 }

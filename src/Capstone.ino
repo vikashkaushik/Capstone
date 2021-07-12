@@ -49,13 +49,9 @@ void loop() {
   display.setTextColor(WHITE);
   display.setCursor(0,0);
 
-<<<<<<< HEAD
    if (client.isConnected()) {
     client.loop();
     client.subscribe("madlibs"); 
     Serial.print("madlibs");
    } 
 }
-=======
-}
->>>>>>> a41b9dd16cb4637285a0db4afc068c377c655819
